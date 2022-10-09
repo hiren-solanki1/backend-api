@@ -12,5 +12,5 @@ mongoose.connect(process.env.DB_CONNECTION,() => console.log('connect db bhai'))
 app.use(express.json());
 app.use('/api/user',authRoute);
 app.use('/api/posts',postRoute);
-
+app.use('/api/getReviews',postRoute);
 app.listen(3000, () => console.log('chalu hoo'));
